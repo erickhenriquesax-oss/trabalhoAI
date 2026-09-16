@@ -2,6 +2,7 @@ package com.ai.algoritmo.controller;
 
 
 import com.ai.algoritmo.model.LabirintoRequest;
+import com.ai.algoritmo.model.ResultadoBusca;
 import com.ai.algoritmo.service.LabirintoService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,7 +23,7 @@ public class LabirintoController {
     }
 
     @PostMapping("/buscar")
-    public String buscar(@RequestBody LabirintoRequest request) {
+    public ResultadoBusca buscar(@RequestBody LabirintoRequest request) {
 
         return service.buscar(request);
     }

@@ -8,4 +8,9 @@ import lombok.Setter;
 public class Posicao {
     private int coluna;
     private int linha;
+
+    public Posicao(int linha, int coluna) {
+        this.linha = linha;
+        this.coluna = coluna;
+    }
 }
