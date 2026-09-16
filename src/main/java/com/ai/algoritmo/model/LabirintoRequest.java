@@ -10,5 +10,4 @@ public class LabirintoRequest {
     private Posicao inicio;
     private Posicao fim;
     private String algoritmo;
-
 }
